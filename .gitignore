@@ -1,1 +1,102 @@
-.venv
+# ===== BACKEND (Java/Maven) =====
+backend/target/
+backend/.mvn/
+backend/mvnw
+backend/mvnw.cmd
+backend/**/.DS_Store
+backend/**/src/main/resources/static/
+backend/**/src/main/resources/templates/
+
+# ===== FRONTEND (React/Node.js) =====
+frontend/node_modules/
+frontend/build/
+frontend/dist/
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+
+# ===== DOCKER =====
+.docker/
+docker-compose.override.yml
+
+# ===== BASES DE DATOS =====
+*.db
+*.sqlite
+*.sqlite3
+data/
+postgres-data/
+# Volúmenes de Docker
+*_data/
+pgdata/
+mysql-data/
+mongo-data/
+
+# ===== LOGS =====
+*.log
+logs/
+# Logs específicos de servicios
+spring.log
+postgres.log
+redis.log
+
+# ===== IDEs =====
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ===== SISTEMA OPERATIVO =====
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ===== TEMPORAL =====
+*.tmp
+*.temp
+.cache/
+
+# ===== VARIABLES DE ENTORNO =====
+.env
+.env.local
+.env.*.local
+# Archivos de configuración sensibles
+application-local.properties
+application-dev.properties
+.env.production
+
+# ===== ARCHIVOS DE BACKUP =====
+*.bak
+*.backup
+
+# ===== NUEVOS SERVICIOS =====
+# PgAdmin
+pgadmin/
+.pgadmin/
+
+# Redis
+redis.conf
+dump.rdb
+
+# Docker volumes y bind mounts
+volumes/
+mounts/
+
+# Certificados y claves
+*.pem
+*.key
+*.crt
+*.p12
+*.jks
+
+# Archivos de migración generados
+flyway/
+liquibase/

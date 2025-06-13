@@ -1,0 +1,18 @@
+FROM openjdk:17-jdk-slim
+
+WORKDIR /app
+
+COPY pom.xml .
+COPY src ./src
+
+# Instalar Maven
+RUN apt-get update && apt-get install -y maven
+
+# Compilar la aplicación
+RUN mvn clean package -DskipTests
+
+# Exponer el puerto
+EXPOSE 8080
+
+# Ejecutar la aplicación
+CMD ["java", "-jar", "target/backend-app-0.0.1-SNAPSHOT.jar"]
